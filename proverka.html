@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+ <meta charset="utf-8"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1"> 
+ <title>Кликер</title> 
+ <style> 
+  body { 
+   font-family: 'Comic Sans MS', sans-serif; 
+   display: flex; 
+   flex-direction: column; 
+   justify-content: flex-end; 
+   align-items: center; 
+   height: 100vh; 
+   margin: 0; 
+   background-image: url(66.jpg); 
+   background-size: cover; 
+   background-position: center; 
+   color: yellow; 
+   position: relative; 
+  } 
+  .button-container { 
+   display: flex; 
+   justify-content: center; 
+   align-items: center; 
+   width: 100%; 
+  } 
+  button { 
+   width: 200px; 
+   height: 200px; 
+   border-radius: 50%; 
+   background-image: url('77.png'); 
+   background-size: cover; 
+   background-position: center; 
+   border: none; 
+   font-size: 20px; 
+   cursor: pointer; 
+   outline: none; 
+   padding: 0; 
+   background-repeat: no-repeat; 
+   margin-bottom: 400px; 
+  } 
+  button:hover { 
+   opacity: 0.8; /* Изменение прозрачности при наведении, чтобы показать эффект наведения */
+  } 
+  p { 
+   font-size: 90px; 
+   color: white; 
+   position: absolute; 
+   top: 450px; 
+  } 
+  @media (max-width: 768px) { 
+   button { 
+    width: 80px; 
+    height: 80px; 
+   } 
+   p { 
+    font-size: 18px; 
+   } 
+  } 
+  @media (max-width: 480px){ 
+   button{ 
+    width: 60px; 
+    height: 60px; 
+   } 
+   p { 
+    font-size: 16px; 
+   } 
+  } 
+ </style> 
+</head> 
+<body> 
+ <p><span id="clickCount">0</span></p> 
+ 
+ <div class="button-container"> 
+  <button id="myButton"></button> 
+ </div> 
+ 
+ <script src="script.js"></script> 
+</body> 
+</html>
